@@ -10,7 +10,7 @@ function getTime(){
 	clockTitle.innerText = `${hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`
 	dateTitle.innerText = date.getFullYear() + ' / ' + str(date.getMonth()+1) + ' / ' + date.getDate() + '\t' + date.toDateString().substr(0,3);
 }
-
+ 
 function init(){
 	getTime();
 	setInterval(getTime,1000);
